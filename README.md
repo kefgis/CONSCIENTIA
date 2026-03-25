@@ -1,4 +1,4 @@
-# XXXXX Training, Consultancy and Research PLC
+# CONSCIENTIA Training, Consultancy and Research PLC
 
 a consultancy office dedicated to empowering professionals and institutions through training, research, and technical support.
 
@@ -27,4 +27,4 @@ Once finalized, it will be migrated to the hosting provider selected by manageme
 
 ---
 
-© 2026 XXXXXX Training, Consultancy and Research PLC
+© 2026 CONSCIENTIA Training, Consultancy and Research PLC
