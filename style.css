@@ -48,28 +48,31 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Hero banner (at bottom) */
+/* Hero banner */
 .hero {
   background: url('banner3.jpg') no-repeat center center;
   background-size: cover;
-  height: 192px;              /* reduced height */
+  height: 132px;              /* match actual banner height */
   max-width: 900px;
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0 auto;   /* reduced top margin */
   display: flex;
-  align-items: center;
+  align-items: center;        /* vertically center text */
   justify-content: center;
   text-align: center;
 }
 
 .hero-content h1 {
   color: #0044cc;
-  font-size: 2em;
+  font-size: 1.8em;           /* balanced size for shorter banner */
   font-weight: bold;
+  margin-top: 0;              /* remove extra spacing above */
+  margin-bottom: 5px;         /* tighten spacing below */
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 .hero-content p {
   color: white;
-  font-size: 1em;
+  font-size: 0.9em;
+  margin-top: 0;              /* reduce gap between h1 and p */
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
