@@ -114,9 +114,9 @@ ul li::before {
   color: #27ae60;
 }
 
-/* -------------------- */
+
+
 /* Responsive Media Queries */
-/* -------------------- */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -126,11 +126,14 @@ ul li::before {
     margin: 8px 0;
   }
   .hero {
-    height: 180px; /* reduce banner height on tablets */
+    height: auto; /* let height adjust */
+    min-height: 180px; /* ensure visibility */
+    background-size: cover;
+    background-position: center;
   }
   .hero-content h1 {
     font-size: 1.5em;
-    margin-top: -10px; /* pull text closer to top */
+    margin-top: -10px;
   }
 }
 
@@ -139,11 +142,16 @@ ul li::before {
     font-size: 0.9em;
   }
   .hero {
-    height: 132px; /* match your banner image height */
+    height: auto; /* remove fixed height */
+    min-height: 132px; /* match your banner image ratio */
+    width: 100%; /* full width */
+    background-size: contain; /* show full image without clipping */
+    background-repeat: no-repeat;
+    background-position: center top;
   }
   .hero-content h1 {
     font-size: 1.2em;
-    margin-top: -15px; /* reduce distance from header */
+    margin-top: -15px;
   }
   .hero-content p {
     font-size: 0.9em;
