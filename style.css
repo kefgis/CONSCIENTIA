@@ -116,18 +116,25 @@ ul li::before {
 
 
 
+
+
+
 /* Responsive Media Queries */
 @media (max-width: 768px) {
+  nav {
+    overflow: visible;       /* make sure nothing is clipped */
+  }
   nav ul {
     flex-direction: column;
     align-items: center;
+    width: 100%;             /* full width so last item fits */
   }
   nav ul li {
-    margin: 8px 0;
+    margin: 10px 0;          /* enough spacing between items */
   }
   .hero {
-    height: auto; /* let height adjust */
-    min-height: 180px; /* ensure visibility */
+    height: auto; 
+    min-height: 180px; 
     background-size: cover;
     background-position: center;
   }
@@ -141,11 +148,22 @@ ul li::before {
   body {
     font-size: 0.9em;
   }
+  nav {
+    overflow: visible;       /* ensure Contact stays visible */
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  nav ul li {
+    margin: 12px 0;          /* extra spacing for touch targets */
+  }
   .hero {
-    height: auto; /* remove fixed height */
-    min-height: 132px; /* match your banner image ratio */
-    width: 100%; /* full width */
-    background-size: contain; /* show full image without clipping */
+    height: auto;
+    min-height: 132px;
+    width: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
   }
