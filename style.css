@@ -53,7 +53,7 @@ nav ul li a:hover {
 
 /* Hero banner (at bottom) */
 .hero {
-  background: url('banner3.jpg') no-repeat center center;
+  background: url('banner4.jpg') no-repeat center center;
   background-size: cover;
   height: 260px;              /* 240*/
   max-width: 900px;
