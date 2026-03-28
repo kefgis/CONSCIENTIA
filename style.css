@@ -1,4 +1,4 @@
-This is my css /* Base styles */
+/* Base styles */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -15,16 +15,14 @@ nav, section, .hero, footer {
 
 /* Section styling */
 section {
-  /*     padding: 40px;  */
-padding: 10px;  
+  padding: 10px;  
 }
 
 /* Headings */
 h1, h2 {
   color: #2c3e50;
-  /*   margin-bottom: 20px; */
   margin-bottom: 5px;
-  margin-top: 5px; /* new */
+  margin-top: 5px;
 }
 
 /* Navigation */
@@ -55,10 +53,9 @@ nav ul li a:hover {
 .hero {
   background: url('banner4.jpg') no-repeat center center;
   background-size: cover;
-  height: 260px;              /* 240*/
+  height: 260px;
   max-width: 900px;
   margin: 10px auto 0 auto;
-    /* margin: 40px auto 0 auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,12 +81,6 @@ footer {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
-
-
-
-  /*padding: 20px;
-  margin-top: 20px;*/
-  
 }
 
 /* Buttons */
@@ -122,4 +113,42 @@ ul li::before {
   left: 0;
   color: #27ae60;
 }
-my banner is cut. I want to reduce the h1 distce from the header. My banner is 430 by 132
+
+/* -------------------- */
+/* Responsive Media Queries */
+/* -------------------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+  .hero {
+    height: 180px; /* reduce banner height on tablets */
+  }
+  .hero-content h1 {
+    font-size: 1.5em;
+    margin-top: -10px; /* pull text closer to top */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9em;
+  }
+  .hero {
+    height: 132px; /* match your banner image height */
+  }
+  .hero-content h1 {
+    font-size: 1.2em;
+    margin-top: -15px; /* reduce distance from header */
+  }
+  .hero-content p {
+    font-size: 0.9em;
+  }
+  section {
+    padding: 5px;
+  }
+}
